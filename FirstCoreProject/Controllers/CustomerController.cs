@@ -12,5 +12,9 @@ namespace FirstCoreProject.Controllers
         {
             return View();
         }
+        public IActionResult NewAction()
+        {
+            return View();
+        }
     }
 }
