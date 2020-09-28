@@ -75,20 +75,20 @@ namespace FirstCoreProject.Repository
            
         }
 
-        public void GetGenre()
-        {
-            //var genres = _dbContext.Books.AsEnumerable().Select(b=> new SelectListItem
-            //{
-            //    Text = b.Genre,
+        //public void GetGenre()
+        //{
+        //    //var genres = _dbContext.Books.AsEnumerable().Select(b=> new SelectListItem
+        //    //{
+        //    //    Text = b.Genre,
 
 
-            //});
-            new SelectListItem { Text = "Mythology", Value = "Mythology" };
-            new SelectListItem { Text = "Historical", Value = "Historical" } ;
-            new SelectListItem { Text = "Biography", Value = "Biography" };
-            new SelectListItem { Text = "Autobiography", Value = "Autobiography" };
+        //    //});
+        //    new SelectListItem { Text = "Mythology", Value = "Mythology" };
+        //    new SelectListItem { Text = "Historical", Value = "Historical" } ;
+        //    new SelectListItem { Text = "Biography", Value = "Biography" };
+        //    new SelectListItem { Text = "Autobiography", Value = "Autobiography" };
 
 
-        }
+        //}
     }
 }

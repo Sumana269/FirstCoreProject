@@ -76,5 +76,9 @@ namespace FirstCoreProject.Controllers
         {
             
         }
+        public IActionResult New()
+        {
+            return View();
+        }
     }
 }

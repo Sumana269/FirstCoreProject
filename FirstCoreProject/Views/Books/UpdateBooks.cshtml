@@ -17,12 +17,20 @@
             <label asp-for="PublishedDate"></label>
             <input asp-for="PublishedDate" class="form-control" />
             <span asp-validation-for="PublishedDate" class="text-danger"></span>
-            <div class="row">
             <div class="form-group">
-                <button type="submit" class="btn btn-outline-success">Update</button>
+                <label asp-for="Genre"></label>
+                <select asp-for="Genre" class="form-control">
+                    <option value="Mythological">Mythology</option>
+                    <option value="Historical">Historical</option>
+                    <option value="Novels">Novels</option>
+                </select>
             </div>
-           </div>
-    </form>
+            <div class="row">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-success">Update</button>
+                </div>
+            </div>
+        </form>
 </div>
 </div>
 

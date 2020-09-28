@@ -17,9 +17,16 @@
             <label asp-for="PublishedDate"></label>
             <input asp-for="PublishedDate" class="form-control" />
             <span asp-validation-for="PublishedDate" class="text-danger"></span>
-            <label>Genre Name</label>
-            @Html.DropDownListFor(b => b.Genre, new SelectList(Model.Genre, "Text", "Value"), "--select--", new { @class = "form-control" })
-        <div class="row">
+           
+             <div class="form-group">
+                 <label asp-for="Genre"></label>
+                 <select asp-for="Genre" class="form-control">
+                     <option value="Mythological">Mythology</option>
+                     <option value="Historical">Historical</option>
+                     <option value="Novels">Novels</option>
+                 </select>
+             </div>
+            <div class="row">
             <div class="form-group">
                 <button type="submit" class="btn btn-outline-success">Add New</button>
             </div>

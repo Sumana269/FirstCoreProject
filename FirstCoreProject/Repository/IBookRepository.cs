@@ -13,6 +13,6 @@ namespace FirstCoreProject.Repository
         void Create(Books book);
         void UpdateBooks(Books book,int? id);
         void DeleteBooks(int? id);
-        void GetGenre();
+        //void GetGenre();
     }
 }
