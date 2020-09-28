@@ -1,0 +1,35 @@
+﻿@model IEnumerable<FirstCoreProject.Models.Books>
+@addTagHelper *,  Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Details of Books</h1>
+<div class="form-group">
+    <a asp-controller="Books" asp-action="Create" class="btn btn-outline-primary">Create</a>
+</div>
+
+@if (Model != null)
+{
+    <ul class="list-group">
+        @foreach (var b in Model)
+        {
+        <li class="list-group-item">
+            @*@b.BookName*@
+            <a asp-controller="Books" asp-action="Details" asp-route-id="@b.Id">@b.BookName</a>
+            <a asp-controller="Books" asp-action="UpdateBooks" class="btn btn-outline-success">
+                Update
+
+            </a>
+            <a asp-controller="Books" asp-action="Details"  class="btn btn-outline-warning" asp-route-id="@b.Id">Delete</a>
+               
+
+</li>
+
+
+        }
+    </ul>
+}
+
+
+

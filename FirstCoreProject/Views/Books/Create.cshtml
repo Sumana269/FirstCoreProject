@@ -1,0 +1,30 @@
+﻿@model FirstCoreProject.Models.Books
+@addTagHelper *,  Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create New Book</h1>
+<div class="row">
+    <div class="col-md-5">
+        <form>
+            <label asp-for="BookName"></label>
+            <input asp-for="BookName" class="form-control" />
+            <span asp-validation-for="BookName" class="text-danger"></span>
+            <label asp-for="Author"></label>
+            <input asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+            <label asp-for="PublishedDate"></label>
+            <input asp-for="PublishedDate" class="form-control" />
+            <span asp-validation-for="PublishedDate" class="text-danger"></span>
+            <label>Genre Name</label>
+            @Html.DropDownListFor(b => b.Genre, new SelectList(Model.Genre, "Text", "Value"), "--select--", new { @class = "form-control" })
+        <div class="row">
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-success">Add New</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
